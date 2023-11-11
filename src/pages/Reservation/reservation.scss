@@ -1,0 +1,70 @@
+.reservation {
+    h2 {
+        padding: 1.875rem 0 1.875rem 0;
+        background-color: var(--primary);
+        color: white;
+        text-align: center;
+    }
+
+    button:disabled,
+    button[disabled] {
+        background-color: #EDEFEE;
+        border-color: #EDEFEE;
+        color: #ADAFAE;
+        cursor: not-allowed;
+    }
+
+    form {
+        max-width: 28.125rem;
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 auto 1.875rem auto;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input,
+    select {
+        height: 2.5rem;
+        padding-inline-end: 1rem;
+        padding-inline-start: 1rem;
+        outline: none;
+        border: 0.0625rem solid #E0E0E0;
+        border-radius: 0.375rem;
+        background: #FFFFFF;
+        color: #495E57;
+        cursor: pointer;
+        transition: border-color 0.3s;
+    }
+
+    input:focus,
+    select:focus {
+        border-width: 0.125rem;
+        border-color: #495E57;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.reservation-completed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 31.25rem;
+    padding: 1.875rem 0 1.875rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
